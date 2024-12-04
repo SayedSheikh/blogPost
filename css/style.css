@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  height: 65px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-1);
+  font-weight: bolder;
+  /* margin-top: 15px; */
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+.nav-left span {
+  font-size: 25px;
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0px 80px;
+  font-size: 18px;
+}
+.nav-left ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.nav-left ul a:hover {
+  color: var(--main-bg-color);
+  font-weight: bold;
+}
+.nav-left ul li {
+  margin: 0 15px;
+  font-family: var(--font-2);
+}
+
+.content {
+  height: 300px;
+  /* background-color: rgb(240, 240, 248); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  position: relative;
+}
+.content::after {
+  content: "";
+  background: url(../images/vecteezy_cartoon-library-interior-with-many-books_21493395.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: inherit;
+  width: 80vw;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+  border-radius: 11px;
+}
+.content-right {
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+}
+.content-right img {
+  height: 280px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.content-left {
+  /* width: 60%; */
+  font-family: var(--font-1);
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  padding: 49px;
+}
+.content-left p {
+  font-size: 17px;
+  margin-top: 17px;
+}
+.home-articles {
+  font-family: var(--font-1);
+  padding: 10px;
+  background-color: rgba(206, 227, 245, 0.2);
+  /* height: 350px; */
+  margin-top: 21px;
+  border-radius: 11px;
+  position: relative;
+}
+.year-box {
+  height: 111px;
+  width: 97px;
+  /* background-color: red; */
+  position: absolute;
+  right: 300px;
+  margin-top: 25px;
+}
+.year-box label,
+input {
+  cursor: pointer;
+}
+.home-article {
+  display: flex;
+  margin: 27px 37px;
+}
+.img-box img {
+  height: 200px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  width: 250px;
+}
+.blog-content {
+  align-self: center;
+  padding: 0 25px;
+}
+.blog-content h3 {
+  padding: 13px 0;
+  color: var(--main-bg-color);
+}
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  color: #f4f6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  color: #f4f6ff;
+  text-decoration: none;
+}
